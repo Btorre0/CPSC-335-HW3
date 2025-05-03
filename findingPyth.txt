@@ -1,0 +1,10 @@
+function pythagorean_triple(a, b):
+    # iterate throug all possible values of x from a to b
+    for x from a to b:
+        # iterate through all possible y such that x is less than to y and y is less than to b
+        for y from x to b:
+            # check if (x, y, z) is a pythagorean tripme
+            for z from y to b:
+                if x^2 + y^2 == z^2:
+                    return (x, y, z)
+    return none
